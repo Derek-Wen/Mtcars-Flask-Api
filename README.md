@@ -1,6 +1,6 @@
 # Mtcars Flask API
 
-This repository implements a predictive linear regression model on the `mtcars.csv` dataset, using a Flask API in Docker and deployed to Google Cloud Run.
+This repository implements a predictive linear regression model on the `mtcars.csv` dataset using a Flask API in Docker and deployed to Google Cloud Run.
 
 ## Contents
 
@@ -39,7 +39,7 @@ This repository implements a predictive linear regression model on the `mtcars.c
    python app.py
    ```
 
-   The server listens on [http://localhost:8080](http://localhost:8080).
+   The server listens on http://localhost:8080.
 
 5. **Test locally**
 
@@ -89,7 +89,7 @@ This repository implements a predictive linear regression model on the `mtcars.c
 
 ## Google Cloud Run Deployment (Console)
 
-1. Go to the [Cloud Run console](https://console.cloud.google.com/run).
+1. Go to the Cloud Run console.
 2. Click **Create Service** and select **Artifact Registry / Docker Hub**.
 3. For **Container image URL**, enter:
 
@@ -100,7 +100,7 @@ This repository implements a predictive linear regression model on the `mtcars.c
 5. Under **Container**, set **Port** to `8080`.
 6. Click **Deploy**.
 
-After deployment you’ll see a URL like:
+After deployment you’ll see a URL:
 
 ```
 https://mtcars-flask-api-427327765085.us-central1.run.app
